@@ -182,7 +182,7 @@ MonoBehaviour:
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: StartScene
-  m_OnlineScene: 
+  m_OnlineScene: Offline
   m_SpawnPrefabs:
   - {fileID: 8922383944051067889, guid: 7d45ae785cb43174fa373ff60c82fe48, type: 3}
   m_CustomConfig: 0
@@ -572,7 +572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7401535425077611043, guid: 7d45ae785cb43174fa373ff60c82fe48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7401535425077611043, guid: 7d45ae785cb43174fa373ff60c82fe48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -606,6 +606,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8922383944051067889, guid: 7d45ae785cb43174fa373ff60c82fe48, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8922383944051067889, guid: 7d45ae785cb43174fa373ff60c82fe48, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
