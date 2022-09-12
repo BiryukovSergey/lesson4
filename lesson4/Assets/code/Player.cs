@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -8,7 +6,7 @@ public class Player : NetworkBehaviour
     [SerializeField] private GameObject playerPrefab;
     private GameObject playerCharacter;
 
-    private void Start()
+    public override void OnStartServer()
     {
         SpawnCharacter();
     }
@@ -21,7 +19,6 @@ public class Player : NetworkBehaviour
         }
 
         playerCharacter = Instantiate(playerPrefab);
-        NetworkServer.SpawnWithClientAuthority(playerCharacter,
-            connectionToClient);
+        NetworkServer.SpawnWithClientAuthority(playerCharacter, connectionToClient);
     }
 }

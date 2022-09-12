@@ -11,6 +11,8 @@ namespace code
         private CharacterController characterController;
         private MouseLook mouseLook;
         private Vector3 currentVelocity;
+        private Vector3 currentVelocityRotation;
+        
         protected override FireAction fireAction { get; set; }
 
         protected override void Initiate()
@@ -22,6 +24,7 @@ namespace code
             characterController ??= gameObject.AddComponent<CharacterController>();
             mouseLook = GetComponentInChildren<MouseLook>();
             mouseLook ??= gameObject.AddComponent<MouseLook>();
+            GetComponentInChildren<AudioListener>().enabled = isLocalPlayer;
         }
 
         public override void Movement()
@@ -47,7 +50,7 @@ namespace code
                 movement = transform.TransformDirection(movement);
                 characterController.Move(movement);
                 mouseLook.Rotation();
-                CmdUpdatePosition(transform.position);
+                CmdUpdatePosition(transform.position,transform.rotation);
             }
             else
             {

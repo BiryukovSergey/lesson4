@@ -91,20 +91,19 @@ namespace code
 
         private IEnumerator ReloadingAnim()
         {
-            string bulletCount;
             while (reloading)
             {
-                bulletCount = " | ";
+                BulletCount = " | ";
                 yield return new WaitForSeconds(0.01f);
-                bulletCount = @" \ ";
+                BulletCount = @" \ ";
                 yield return new WaitForSeconds(0.01f);
-                bulletCount = "---";
+                BulletCount = "---";
                 yield return new WaitForSeconds(0.01f);
-                bulletCount = " / ";
+                BulletCount = " / ";
                 yield return new WaitForSeconds(0.01f);
             }
 
-            bulletCount = bullets.Count.ToString();
+            BulletCount = bullets.Count.ToString();
             yield return null;
         }
     }
