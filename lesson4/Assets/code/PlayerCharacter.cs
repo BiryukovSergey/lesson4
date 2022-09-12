@@ -54,8 +54,8 @@ namespace code
             }
             else
             {
-                transform.position = Vector3.SmoothDamp(transform.position, serverPosition, ref currentVelocity,
-                    movingSpeed * Time.deltaTime);
+                transform.position = Vector3.SmoothDamp(transform.position, serverPosition, ref currentVelocity, movingSpeed * Time.deltaTime);
+                transform.rotation = serverRotation;
             }
         }
 
