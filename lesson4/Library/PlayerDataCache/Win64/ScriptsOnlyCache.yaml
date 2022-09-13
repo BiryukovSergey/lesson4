@@ -40,6 +40,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkManager
     - UnityEngine.Networking.NetworkManagerHUD
+    - UnityEngine.Networking.NetworkStartPosition
   sceneClasses:
     Assets/Scenes/Offline.unity:
     - Class: 1
@@ -67,7 +68,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1456}
+      Script: {instanceID: 1452}
+    - Class: 114
+      Script: {instanceID: 3852}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -142,23 +145,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 3600}
     - Class: 114
-      Script: {instanceID: 3796}
+      Script: {instanceID: 3798}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 3920}
+      Script: {instanceID: 3852}
     - Class: 114
-      Script: {instanceID: 3978}
+      Script: {instanceID: 3922}
     - Class: 114
-      Script: {instanceID: 4066}
+      Script: {instanceID: 3980}
     - Class: 114
-      Script: {instanceID: 4200}
+      Script: {instanceID: 4068}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 4202}
     - Class: 114
-      Script: {instanceID: 4370}
+      Script: {instanceID: 4286}
+    - Class: 114
+      Script: {instanceID: 4372}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,6 +187,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: eafb77726b67b7571818a7210a3ce11e
+    assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
+    namespaceName: UnityEngine.Networking
+    className: NetworkIdentity
+  - hash:
+      serializedVersion: 2
       Hash: 134322c9293c1896357cce271b819ce4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -192,12 +203,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: eafb77726b67b7571818a7210a3ce11e
-    assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
-    namespaceName: UnityEngine.Networking
-    className: NetworkIdentity
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -704,7 +709,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: d1f07c9e64b7817e6271f80bb03de25f
+      Hash: 73978a54b7687a676774f12a990d6485
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
